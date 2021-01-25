@@ -1,0 +1,271 @@
+section.modal::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 4;
+}
+
+section.modal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px;
+}
+
+@media (min-width: 640px) and (min-width: 1024px) {
+  section.modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 80%;
+    padding: 80px;
+  }
+}
+
+section.modal div.modal-container {
+  border-radius: 12px;
+  position: relative;
+  background: #fff;
+  z-index: 5;
+  padding: 5px 0 20px;
+  -webkit-animation: fadeIn 0.3s forwards;
+          animation: fadeIn 0.3s forwards;
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  section.modal div.modal-container {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
+    grid-gap: 50px;
+  }
+}
+
+section.modal div.modal-container div.modal-header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #858585;
+}
+
+section.modal div.modal-container div.modal-header div.title h3 {
+  margin: 20px;
+  font-size: 1.2rem;
+  color: #000;
+}
+
+section.modal div.modal-container div.modal-header div.closed {
+  margin: 20px;
+}
+
+section.modal div.modal-container div.modal-header div.closed button.modal_close {
+  border: none;
+  background: none;
+  width: 40px;
+  height: 40px;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  cursor: pointer;
+  color: #858585;
+}
+
+section.modal div.modal-container div.modal-form {
+  height: 100%;
+  border-bottom: 1px solid #858585;
+}
+
+@media (min-width: 640px) {
+  section.modal div.modal-container div.modal-form form {
+    padding: 0 20px;
+  }
+}
+
+section.modal div.modal-container div.modal-form form div.input-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media (min-width: 1024px) {
+  section.modal div.modal-container div.modal-form form div.input-group {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+
+section.modal div.modal-container div.modal-form form div.input-group div.inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  margin: 20px;
+}
+
+section.modal div.modal-container div.modal-form form div.input-group div.inputs label {
+  color: #000;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  font-weight: bolder;
+}
+
+section.modal div.modal-container div.modal-form form div.input-group div.inputs input {
+  width: 100%;
+  height: 32px;
+  background-color: #fff;
+  outline: none;
+  border-radius: 4px;
+  border: 2px solid #d3d3d3;
+  padding-left: 20px;
+}
+
+section.modal div.modal-container div.modal-form form div.file {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 10px 20px;
+}
+
+section.modal div.modal-container div.modal-form form div.file label {
+  color: #000;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  font-weight: bolder;
+}
+
+section.modal div.modal-container div.modal-form form div.contract {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 20px 20px 0;
+  width: 100%;
+}
+
+section.modal div.modal-container div.modal-form form div.contract label {
+  color: #000;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  font-weight: bolder;
+}
+
+section.modal div.modal-container div.modal-form form div.contract textarea {
+  margin-right: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background: #fff;
+  outline: none;
+  border-radius: 4px;
+  border: 2px solid #d3d3d3;
+  padding: 10px;
+  color: #858585;
+  line-height: 1.6em;
+}
+
+section.modal div.modal-container div.modal-form form div.contract div.signature {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+section.modal div.modal-container div.modal-form form div.contract div.signature span {
+  color: #000;
+  font-weight: bolder;
+  font-size: 0.8rem;
+  margin-left: 10px;
+}
+
+section.modal div.modal-container div.action {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-right: 40px;
+  margin-top: 10px;
+}
+
+section.modal div.modal-container div.action button.submit {
+  border: none;
+  background: #1b546f;
+  border-radius: 4px;
+  padding: 12px 20px;
+  color: #fff;
+  font-weight: bolder;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(50px, 0, 0);
+            transform: translate3d(50px, 0, 0);
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(50px, 0, 0);
+            transform: translate3d(50px, 0, 0);
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+
+span.error {
+  color: red;
+  margin-top: 5px;
+  font-size: 0.8rem;
+}
+/*# sourceMappingURL=styles.css.map */

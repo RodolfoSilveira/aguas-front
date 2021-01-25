@@ -1,0 +1,27 @@
+div.hero {
+  background: url("../../assets/images/ocean.png") center no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: calc(100vh + 60px);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-top: 5.2rem;
+
+  z-index: -1;
+
+  div.logo-box {
+    div.logo {
+      background: url("../../assets/images/logo-mob.png") center no-repeat;
+      height: 139px;
+      width: 286px;
+      @media (min-width: 640px) {
+        background: url("../../assets/images/logo.png") center no-repeat;
+        height: 179px;
+        width: 367px;
+      }
+    }
+  }
+}

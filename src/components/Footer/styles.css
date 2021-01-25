@@ -1,0 +1,26 @@
+footer {
+  border-top: 8px solid  #1b546f;
+  background: #fff;
+  height: 30vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer div.inema-logo {
+  background: url("../../assets/images/inema_marca.png") center no-repeat;
+  background-size: cover;
+  width: 127px;
+  height: 41px;
+}
+/*# sourceMappingURL=styles.css.map */

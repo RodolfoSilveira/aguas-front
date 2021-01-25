@@ -1,0 +1,184 @@
+div.main {
+  background-color: #fff;
+  padding: 1rem;
+  max-width: 90%;
+  margin: 0 auto;
+  z-index: 1;
+  position: relative;
+  top: -80px;
+}
+
+@media (min-width: 640px) {
+  div.main {
+    padding: 5rem 7rem;
+    max-width: 80%;
+  }
+}
+
+div.main section.subscription {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border-bottom: 1px solid #858585;
+}
+
+@media (min-width: 1024px) {
+  div.main section.subscription {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+
+div.main section.subscription div.box-one {
+  width: 100%;
+  margin: 20px;
+}
+
+div.main section.subscription div.box-one h3 {
+  color: #1b546f;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 0 0 3rem;
+}
+
+div.main section.subscription div.box-one p {
+  font-size: 1.2rem;
+  color: #858585;
+  line-height: 1.5em;
+}
+
+div.main section.subscription div.box-two {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+div.main section.subscription div.box-two div.register-box {
+  padding: 1rem;
+  background-color: #1b546f;
+}
+
+@media (min-width: 640px) {
+  div.main section.subscription div.box-two div.register-box {
+    width: 360px;
+    padding: 4rem 4rem;
+    margin: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  div.main section.subscription div.box-two div.register-box {
+    position: relative;
+    top: -160px;
+  }
+}
+
+div.main section.subscription div.box-two div.register-box h3 {
+  color: #277ba3;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+}
+
+div.main section.subscription div.box-two div.register-box p {
+  color: #fff;
+  font-size: 1.2rem;
+  margin: 25px 0;
+  line-height: 1.5em;
+}
+
+div.main section.subscription div.box-two button {
+  padding: 12px 25px;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #1b546f;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+@media (min-width: 640px) {
+  div.main section.subscription div.box-two button {
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  div.main section.subscription div.box-two button {
+    position: relative;
+    top: -140px;
+  }
+}
+
+div.main section.about {
+  margin-top: 6.4rem;
+}
+
+div.main section.about h3.title {
+  color: #1b546f;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+div.main section.about article h3 {
+  font-size: 1.2rem;
+  color: #858585;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+div.main section.about article p {
+  font-size: 1rem;
+  color: #858585;
+  margin-bottom: 1.8rem;
+  line-height: 1.5em;
+}
+
+div.main section.rules {
+  margin-top: 6.4rem;
+}
+
+div.main section.rules h3.title {
+  color: #1b546f;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+div.main section.rules p {
+  font-size: 1rem;
+  color: #858585;
+  margin-bottom: 1.2rem;
+  line-height: 1.5em;
+}
+
+div.main section.rules ul.list-rules {
+  list-style: disc;
+  margin-left: 1rem;
+  margin-bottom: 2rem;
+}
+
+div.main section.rules ul.list-rules li {
+  font-size: 1rem;
+  color: #858585;
+  margin-bottom: 1.2rem;
+}
+/*# sourceMappingURL=styles.css.map */

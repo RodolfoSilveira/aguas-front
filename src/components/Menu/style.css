@@ -1,0 +1,176 @@
+div.menu {
+  height: 60px;
+  width: 100%;
+  background: #1b546f;
+  z-index: 2;
+}
+
+div.menu div.menu-section {
+  height: 100%;
+}
+
+div.menu div.menu-section div.menu-toggle {
+  width: 40px;
+  height: 30px;
+  display: block;
+  position: relative;
+  top: 15px;
+  left: 20px;
+}
+
+@media (min-width: 640px) {
+  div.menu div.menu-section div.menu-toggle {
+    display: none;
+  }
+}
+
+div.menu div.menu-section div.menu-toggle div.one,
+div.menu div.menu-section div.menu-toggle div.two,
+div.menu div.menu-section div.menu-toggle div.three {
+  background-color: #fff;
+  height: 5px;
+  width: 100%;
+  margin: 0 auto 6px;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+div.menu div.menu-section nav {
+  height: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+  display: none;
+}
+
+@media (min-width: 640px) {
+  div.menu div.menu-section nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+div.menu div.menu-section nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div.menu div.menu-section nav ul li {
+  padding: 0 10px;
+}
+
+@media (min-width: 640px) {
+  div.menu div.menu-section nav ul li {
+    padding: 0 12px;
+  }
+}
+
+div.menu div.menu-section nav ul li a {
+  color: #4d94b5;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+@media (max-width: 640px) {
+  div.menu div.menu-section nav ul li a {
+    font-size: 0.7rem;
+  }
+}
+
+@media (min-width: 640px) {
+  div.menu div.menu-section nav ul li + li {
+    margin-left: 20px;
+  }
+}
+
+div.menu div.on {
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #1b546f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div.menu div.on nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+div.menu div.on nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+div.menu div.on div.menu-toggle {
+  position: absolute;
+  right: 20px;
+  top: 45px;
+}
+
+div.menu div.on div.menu-toggle div.one {
+  -webkit-transform: rotate(45deg) translate(7px, 7px);
+          transform: rotate(45deg) translate(7px, 7px);
+}
+
+div.menu div.on div.menu-toggle div.two {
+  opacity: 0;
+}
+
+div.menu div.on div.menu-toggle div.three {
+  -webkit-transform: rotate(-45deg) translate(8px, -9px);
+          transform: rotate(-45deg) translate(8px, -9px);
+}
+
+div.menu div.on nav ul li {
+  text-align: center;
+  display: block;
+}
+
+div.menu div.on nav ul li a {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  font-size: 1.8rem;
+  line-height: 3rem;
+  display: block;
+}
+/*# sourceMappingURL=style.css.map */

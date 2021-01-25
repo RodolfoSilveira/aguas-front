@@ -1,0 +1,146 @@
+div.menu {
+  height: 60px;
+  width: 100%;
+  background: #1b546f;
+  z-index: 2;
+
+  div.menu-section {
+    height: 100%;
+    div.menu-toggle {
+      width: 40px;
+      height: 30px;
+      display: block;
+      position: relative;
+      top: 15px;
+      left: 20px;
+      @media (min-width: 640px) {
+        display: none;
+      }
+      div.one,
+      div.two,
+      div.three {
+        background-color: #fff;
+        height: 5px;
+        width: 100%;
+        margin: 0 auto 6px;
+        transition-duration: 0.3s;
+      }
+    }
+    nav {
+      height: 100%;
+      max-width: 1080px;
+      margin: 0 auto;
+      display: none;
+
+      @media (min-width: 640px) {
+        display: flex;
+        align-items: center;
+      }
+
+      ul {
+        display: flex;
+        align-items: center;
+        li {
+          padding: 0 10px;
+          @media (min-width: 640px) {
+            padding: 0 12px;
+          }
+          a {
+            color: #4d94b5;
+            text-transform: uppercase;
+            font-size: 1rem;
+
+            @media (max-width: 640px) {
+              font-size: 0.7rem;
+            }
+          }
+        }
+
+        li + li {
+          @media (min-width: 640px) {
+            margin-left: 20px;
+          }
+        }
+      }
+    }
+  }
+  div.on {
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #1b546f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  div.on {
+    nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+  div.on {
+    div.menu-toggle {
+      position: absolute;
+      right: 20px;
+      top: 45px;
+    }
+  }
+  div.on {
+    div.menu-toggle {
+      div.one {
+        transform: rotate(45deg) translate(7px, 7px);
+      }
+    }
+  }
+  div.on {
+    div.menu-toggle {
+      div.two {
+        opacity: 0;
+      }
+    }
+  }
+  div.on {
+    div.menu-toggle {
+      div.three {
+        transform: rotate(-45deg) translate(8px, -9px);
+      }
+    }
+  }
+  div.on {
+    nav {
+      ul {
+        li {
+          text-align: center;
+          display: block;
+        }
+      }
+    }
+  }
+  div.on {
+    nav {
+      ul {
+        li {
+          a {
+            transition-duration: 0.5s;
+            font-size: 1.8rem;
+            line-height: 3rem;
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
