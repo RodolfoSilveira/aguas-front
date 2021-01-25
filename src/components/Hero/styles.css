@@ -1,5 +1,5 @@
 div.hero {
-  background: url("../../assets/images/ocean.png") center no-repeat;
+  background: url("../../assets/images/ocean.png") center no-repeat fixed;
   background-size: cover;
   width: 100%;
   height: calc(100vh + 60px);
@@ -15,6 +15,10 @@ div.hero {
           align-items: center;
   padding-top: 5.2rem;
   z-index: -1;
+}
+
+div.hero div.logo-box {
+  margin-top: 70px;
 }
 
 div.hero div.logo-box div.logo {

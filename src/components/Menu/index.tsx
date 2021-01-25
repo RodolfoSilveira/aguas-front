@@ -34,7 +34,7 @@ const Menu: React.FC = () => {
         </div>
         <nav>
           <ul>
-            <li><a href="/">Início</a></li>
+            <li><a href="#hero-banner">Início</a></li>
             <li><a href="#main-subscription">O concurso</a></li>
             <li><a href="#main-about">Sobre</a></li>
             <li><a href="#main-rules">Regras</a></li>

@@ -2,7 +2,7 @@ div.main {
   background-color: #fff;
   padding: 1rem;
   max-width: 90%;
-  margin: 0 auto;
+  margin: 50px auto 0;
   z-index: 1;
 
   position: relative;
@@ -52,13 +52,13 @@ div.main {
 
         @media (min-width: 640px) {
           width: 360px;
-          padding: 4rem 4rem;
+          padding: 4rem 3.5rem;
           margin: 20px;
         }
 
         @media (min-width: 1024px) {
           position: relative;
-          top: -160px;
+          top: -140px;
         }
 
         h3 {
