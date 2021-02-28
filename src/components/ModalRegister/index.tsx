@@ -1,7 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { toast } from 'react-toastify';
 import api from '../../services/api';
 import './styles.css';
+import { useOutsideEvent } from '../../hooks';
 
 export interface Props {
   onClose: () => void
@@ -37,6 +38,9 @@ const ModalRegister: React.FC<Props> = ({ onClose }: Props) => {
   const [photoLocationError, setPhotoLocationError] = useState(false);
   const [dateRegisterError, setDateRegisterError] = useState(false);
   const [photoError, setPhotoError] = useState(false);
+
+  const wrapperRef = useRef(null);
+  useOutsideEvent(wrapperRef, onClose);
 
   useEffect(() => {
     setCollaboratorError(false);
@@ -117,7 +121,7 @@ const ModalRegister: React.FC<Props> = ({ onClose }: Props) => {
 
   return (
     <section className="modal">
-      <div className="modal-container">
+      <div className="modal-container" ref={wrapperRef}>
         <div className="modal-header">
           <div className="title">
             <h3>Cadastro</h3>

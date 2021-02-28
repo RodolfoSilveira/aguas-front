@@ -63,16 +63,6 @@ div.menu div.menu-section nav ul {
           align-items: center;
 }
 
-div.menu div.menu-section nav ul li {
-  padding: 0 10px;
-}
-
-@media (min-width: 640px) {
-  div.menu div.menu-section nav ul li {
-    padding: 0 12px;
-  }
-}
-
 div.menu div.menu-section nav ul li a {
   color: #4d94b5;
   text-transform: uppercase;

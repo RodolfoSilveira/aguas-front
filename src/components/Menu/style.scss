@@ -42,9 +42,9 @@ div.menu {
         display: flex;
         align-items: center;
         li {
-          padding: 0 10px;
+          // padding: 0 10px;
           @media (min-width: 640px) {
-            padding: 0 12px;
+            // padding: 0 12px;
           }
           a {
             color: #4d94b5;
